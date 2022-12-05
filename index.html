@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Title for the website-->
   <title>Khyle Flores // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Added a favicon for the website for better SEO/bookmarking-->
+  <link rel="icon" href="assets/images/KF-website-icon.png" type = "image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <!-- <figure class="portfolio-image">
-      <img src="/assets/images/portfolio-image.jpg">
-    </figure> -->
+  <!-- Header for the Navigation tab-->
+  <header> 
     <h1 class="my-name">Khyle Flores</h1>
+      <!-- Three navigations of the website-->
       <nav> 
         <ul>
             <li>
@@ -32,60 +32,103 @@
   </header>
 
   <!-- hero banner -->
+  <!-- Welcome text added position in the middle of banner-->
   <section class="hero-banner">
-    <div class="banner-welcome">
-      <h2 class="left-text">Lorem ipsum dolor sit amet, </h2>
-      <h2 class="right-text">consectetur adipiscing elit.</h2>
+    <div class="banner-welcome" alt="keyboard, pen, and notepad in white surface">
+      <h2 class="left-text">Welcome, I'm Khyle</h2>
+      <h2 class="right-text">and this is my online portfolio.</h2>
     </div>
   </section> 
 
+  <!--main section that contains the page's information-->
   <main class="page-wrapper"> 
-    <!-- about me -->
+    <!-- about me section-->
     <section class="page-section-1" id="about-me">
-      <h2 class="page-section-title" id="about-me-title">About Me</h2>
-      <p id="about-me-details">Etiam ac sodales nunc. Fusce ligula massa, tincidunt quis lectus eu, auctor sollicitudin sapien. 
-        Cras eget enim felis. Praesent sed ullamcorper mi. Ut vel auctor eros. Quisque urna mauris, 
-        malesuada sit amet pretium quis, iaculis sit amet nulla. Sed tincidunt justo mi, gravida convallis tortor vestibulum non. 
-        Praesent tincidunt efficitur nulla, eu ornare felis gravida quis. Curabitur eu orci quis orci venenatis condimentum. 
-        Vivamus a consectetur nisi, in pharetra massa. Integer dapibus eu ante et tristique. Class aptent taciti sociosqu ad litora 
-        torquent per conubia nostra, per inceptos himenaeos.</p>
+      <h2 id="about-me-title">About Me</h2>
+      <!--Added image of myself-->
+      <figure id="portfolio-image">
+        <img src="assets/images/portfolio-image.jpg" alt="Khyle Flores' photo/woman wearing white blazer, black top and white trouser">
+      </figure>
+      <!--About me details Lorem Ipsum is used for now-->
+      <h3 id="about-me-details">Let's get acquainted! My name is Khyle. I was born in the Philippines but I am currently living in Cambridgehsire,
+        United Kingdom. I currently a part-time home administrator in Hunters Down Huntingdon. I would like to be a front end developer someday which is why 
+        I am taking a Trilogy bootcamp. 
+        <br>
+        <br>
+        I am a hard worker and a good team player who is motivated by a desire to gain employment experience, skills and knowledge that will help to launch my career on this field.</h3>
     </section> 
 
     <!-- portfolio container -->
     <section class="page-section-2" id="my-work">
-      <h2 class="page-section-title" id="my-work-title">My Work</h2>
-      <figure id="work-1">
-        <div id="headline">
-          <h3>Work 1</h3>
-        </div>
-      </figure>
-      <figure id="work-2">
-        <div id="headline">
-          <h3>Work 2</h3>
-        </div>
-      </figure>
-      <figure id="work-3">
-        <div id="headline">
-          <h3>Work 3</h3>
-        </div>
-      </figure>
-      <figure id="work-4">
-        <div id="headline">
-          <h3>Work 4</h3>
-      </div>
-    </figure>
-      <figure id="work-5">
-        <div id="headline">
-          <h3>Work 5</h3>
-        </div>
-      </figure>
+      <h2 id="my-work-title">My Work</h2>
+        <figure id="work-1">
+          <!--Work 1 image is linked to deployed Horiseon website-->
+          <a target="_blank" href="https://khyleflores.github.io/horiseon-search-optimization/">
+            <img src="assets/images/horiseon-website-screenshot.png" height="490px" width="900px" alt="screenshot of Horiseon landing page">
+            <!--container for work title-->
+            <div id="headline-big">
+              <h3>Horiseon Search Optimization</h3>
+            </div>
+          </a>
+        </figure>
+        <!--Work 2 image is linked to deployed Prework Study Guide website-->
+        <figure id="work-2">
+          <a target="_blank" href="https://khyleflores.github.io/prework-study-guide/">
+            <img src="assets/images/prework-study-guide-screenshot.png" height="290px" width="450px" alt="screenshot of Prework study guide landing page">
+            <div id="headline-small">
+              <h3>Prework Study Guide</h3>
+            </div>
+           </a>
+        </figure>
+        <!--Work 3 image - not yet available so linked to go back to My work section-->
+        <figure id="work-3">
+          <a href="#my-work">
+            <img src="assets/images/02-portfolio-3.jpg" height="290px" width="450px">
+            <!--container for work title-->
+            <div id="headline-small">
+              <h3>Work 3</h3>
+             </div>
+          </a>  
+        </figure>
+        <!--Work 4 image - not yet available so linked to go back to My work section-->
+        <figure id="work-4">
+          <a href="#my-work">
+            <img src="assets/images/02-portfolio-4.jpg" height="290px" width="450px">
+            <div id="headline-small">
+              <h3>Work 4</h3>
+            </div>
+          </a>
+        </figure>
+        <!--Work 3 image - not yet available so linked to go back to My work section-->
+        <figure id="work-5">
+          <a href="#my-work">
+            <img src="assets/images/02-portfolio-2.jpg" height="290px" width="450px">
+            <div id="headline-small">
+              <h3>Work 5</h3>
+            </div>
+          </a>
+        </figure>
     </section>
 
-    <!-- contact 
-    <section class="page-section contact" id="contact-me">
-      <h2 class="page-section-title" id="contact-me-title">Contact Me</h2>
+    <!-- contact -->
+    <section class="page-section-3 contact" id="contact-me">
+      <h2 id="contact-me-title">Contact Me</h2>
+      <h3 id="contact-me-email">Email: khyleflores10@gmail.com</h3>
+      <!--Linked to my Twitter profile-->
+      <h3 id="contact-me-twitter"><a target="_blank" href="https://twitter.com/KhyleFlores10">Twitter</a></h3>
+      <!--Linked to my LinkedIn profile-->
+      <h3 id="contact-me-linkedin"><a target="_blank" href="https://www.linkedin.com/in/khyle-flores-2478a7b5/">LinkedIn</a></h3>
+      <!--Linked to my Github profile-->
+      <h3 id="contact-me-github"><a target="_blank" href="https://github.com/khyleflores">Github</a></h3>
     </section> 
-  </main>
-</body>
 
+  </main>
+
+  
+  <footer>
+    <p>
+      &copy; 2022 Khyle Flores
+  </p>
+  </footer>
+</body>
 </html>

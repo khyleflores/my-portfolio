@@ -1,3 +1,11 @@
+/* color scheme sourced from https://www.hostinger.co.uk/tutorials/website-color-schemes*/
+:root {
+  --cavern-pink: #E1B0AC;
+  --light-pink: #F2D4D6;
+  --navy-blue: #213F99;
+  --grey: #3D3D3D;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,7 +18,7 @@ html {
 }
 
 body{
-  background-color: #F2D4D6;
+  background-color: var(--light-pink);
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
   line-height: 1.5;
@@ -19,12 +27,10 @@ body{
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3
+{
   margin-bottom: 0.625rem;
-  color: #213F99;
+  color: var(--navy-blue);
   font-weight: 700;
   line-height: 1.1;
 }
@@ -39,32 +45,29 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
-}
-
-h4 {
   font-size: 2.5rem;
 }
 
-h5 {
-  font-size: 2rem;
+/*Removed underlines of any links*/
+a{
+  text-decoration: none;
 }
 
-h6 {
-  font-size: 1.5rem;
-}
 
 header {
+  width: 100%;
   padding: 5rem 5rem 2rem 5rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #E1B0AC;
+  background-color: var(--cavern-pink);
   font-weight: bold;
 }
 
+/*Display navigation links horizontal*/
 header h1{
   display: inline-block;
 }
 
+/*Display navigation links on the right side of header*/
 header nav{
   float: right;
 }
@@ -78,11 +81,11 @@ nav li{
 }
 
 nav a{
-  text-decoration: none;
   margin-right: 3rem;
-  color: #213F99;
+  color: var(--navy-blue);
 }
 
+/*banner properties with background image*/
 .hero-banner {
   height: 40rem;
   width: 100%;
@@ -92,119 +95,210 @@ nav a{
   background-position: center;
 }
 
+/*text in the middle of banner*/
 .banner-welcome .left-text{
   padding: 12rem 0rem 0rem 52rem;
 }
 
+/*text in the middle of banner*/
 .banner-welcome .right-text{
   padding: 0rem 0rem 0rem 62rem;
 }
 
 main {
-  width: 96%;
+  width: 100vh;
   margin: 2rem auto;
 }
 
-
+/*container to set sections top to bottom*/
 .page-wrapper {
   display: flex;
-  height: 1200px;
+  height: auto;
   width: 1100px;
   flex-direction: column;
   margin: 0 auto;
 }
+
+/* Create About Me grid, add margin for space before Section 2 */
 .page-section-1{
   display: inline-grid;
   grid-template-columns: 25% 75%;
   grid-template-areas:
-  'about-me-title about-me-details';
+  'about-me-title about-me-details'
+  'portfolio-image about-me-details';
+  margin-bottom: 8%;
 }
+
+/* Create My Work grid, add gaps for each areas */
 .page-section-2{
   display: inline-grid;
-  grid-template-rows: 400px 400px 400px;
+  grid-template-rows: 500px 300px 300px;
   grid-template-columns: 1fr 2fr 2fr;
   grid-template-areas:
   'my-work-title work-1 work-1'
   'my-work-title work-2 work-3'
   'my-work-title work-4 work-5';
+  gap: 1rem;
 }
 
+/* Create contact me grid, add padding for space for bottom */
+.page-section-3{
+  display: inline-grid;
+  grid-template-columns: 25% 37.5% 12.5% 12.5% 12.5%;
+  grid-template-areas:
+  'contact-me-title contact-me-email contact-me-twitter contact-me-linkedin contact-me-github';
+  align-items: baseline;
+  padding-bottom: 2%;
+}
+
+/*Specify all the grid areas*/
 #about-me-title{
   grid-area: about-me-title;
 }
+
+#portfolio-image{
+  grid-area: portfolio-image;
+}
 #about-me-details{
   grid-area: about-me-details;
+  color: var(--grey);
 }
 #my-work-title{
   grid-area: my-work-title;
 }
 
-#work-1{
-  background-image: url("/assets/images/02-portfolio-1.jpg");
-  border: .5rem solid #E1B0AC;
+#work-1 {
   grid-area: work-1;
-  background-size: cover;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
 }
 
-#work-2{
-  background-image: url("/assets/images/02-portfolio-2.jpg");
-  border: .5rem solid #E1B0AC;
+#work-2 {
   grid-area: work-2;
-  background-size: cover;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
 }
 
-#work-3{
-  background-image: url("/assets/images/02-portfolio-3.jpg");
-  border: .5rem solid #E1B0AC;
+#work-3 {
   grid-area: work-3;
-  background-size: cover;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
 }
 
-#work-4{
-  background-image: url("/assets/images/02-portfolio-4.jpg");
-  border: .5rem solid #E1B0AC;
+#work-4 {
   grid-area: work-4;
-  background-size: cover;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
 }
 
-#work-5{
-  background-image: url("/assets/images/02-run-buddy.jpg");
-  border: .5rem solid #E1B0AC;
+#work-5 {
   grid-area: work-5;
-  background-size: cover;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
 }
 
-#headline{
-  border: 1rem solid #E1B0AC;
+#contact-me-title{
+  grid-area: contact-me-title;
+}
+#contact-me-email{
+  grid-area: contact-me-email;
+}
+#contact-me-twitter{
+  grid-area: contact-me-twitter;
+}
+#contact-me-linkedin{
+  grid-area: contact-me-linkedin;
+}
+#contact-me-github{
+  grid-area: contact-me-github;
+}
+
+/*Border and Opacity for the images in My Work section*/
+#work-1 img, #work-2 img, #work-3 img, #work-4 img, #work-5 img{
+  border: .5rem solid var(--cavern-pink);
+  display: flex;
+  opacity: .75;
+}
+
+/*Container for title of each work section*/
+#headline-big, #headline-small {
+  border: 1rem solid var(--cavern-pink);
   background-color: rgba(255,255,255,0.8);
   width: 30rem;
-  align-self: flex-end;
-
+  text-align: center;
+  position: relative;
+  padding: 0.5rem 1rem;
 }
 
-
-/*
-.portfolio-image img{
-   border-radius: 50%; 
+/*different margin for the bigger image and small image on work section*/
+#headline-big{
+  margin: -10rem 0 1.5rem 0;
 }
 
-.portfolio-image{
-  position: absolute;
-  left: 20%;
-  top: 2.5%;
-}*/
+#headline-small {
+  margin: -7rem 0 1.5rem 0;
+}
+
+/*When hover on image, box shadow properties changes and opacity to 100*/
+#work-1 img:hover, #work-2 img:hover, #work-3 img:hover, #work-4 img:hover, #work-5 img:hover {
+  box-shadow: inset 0px 0px 8px var(--grey), 0 0 15px var(--grey);
+  opacity: 1;
+}
+
+/*Make image border circle*/
+#portfolio-image img{
+  border-radius: 50%; 
+}
+
+/*Footer properties*/
+footer{
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #ebecf0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* media query for smaller screens */
+@media screen and (max-width: 768px) {
+  header nav {
+    float: none;
+    width: 50%;
+  }
+
+  .hero-banner {
+    height: 20rem;
+    width: 100%;
+  }
+
+  .banner-welcome{
+    display: none;
+  }
+
+
+  #work-1 img{
+    width: 450px;
+    height: 290px;
+  }
+
+  .page-section-1{
+    grid-template-columns: 500px;
+    grid-template-areas:
+    'about-me-title'
+    'portfolio-image'
+    'about-me-details';
+  }
+  .page-section-2{
+    grid-template-rows: 50px;
+    grid-template-columns: 500px;
+    grid-template-areas:
+    'my-work-title'
+    'work-1'
+    'work-2'
+    'work-3'
+    'work-4' 
+    'work-5';
+  }
+  
+  .page-section-3{
+    grid-template-rows: 50px;
+    grid-template-columns: 20% 25% 18.33% 18.33% 18.33%;
+    grid-template-areas:
+    'contact-me-title'
+    'contact-me-email'
+    'contact-me-twitter'
+    'contact-me-linkedin'
+    'contact-me-github';
+  }
+}
