@@ -4,7 +4,7 @@
 
 A portfolio of work has been created so I can showcase my skills to employers looking for front end programmers. On this portfolio, details about me, my work and my contacts are listed. It is important that I am able to create this portfolio as well as being able to connect the projects I have deployed to this website so that prospective employers may view my works and assess my skills. This will present evidence of my relevant skills and abilities.
 
-By doing project, I was able to apply some skills I have learned during the Week 2 Bootcamp - CSS grids, media queries, and CSS variables.
+By doing this project, I was able to apply some skills I have learned during the Week 2 Bootcamp - CSS grids, media queries, and CSS variables.
 As I don't have enough deployed applications, I have used some placeholders and sample images linking it back to the same website. 
 I will be able to update this every time as I continue to complete more projects and deploy more applications.
 
@@ -26,18 +26,18 @@ On the website, you will be able to see navigations on top right side of the pag
 
 ![Navigation screenshot](/assets/images/website-screenshots/screenshot-1.png)
 
-To go to the section you want to access, click one of list in the navigation. This will direct you to that section of the page. 
+To go to the section you want to access, click one of the lists in the navigation. This will direct you to that section of the page. 
 
 On My Work section, hover on one of the images and you will see the opacity of it changes. This means that this is the work you will access once clicked.
 
 ![My work section screenshot](/assets/images/website-screenshots/screenshot-2.png)
 
- When you click this, the deployed application of that selected work will open in an new tab.
+ When you click this, the deployed application of that selected work will open in a new tab.
 
  ![New page with deployed application screenshot](/assets/images/website-screenshots/screenshot-3.png)
 
  On the Contact Me section, there are lists of links where viewers will be able to access my Twitter, Github, and Linked In.
- To access, click on of the choices and this will open in a new tab.
+ To access, click on one of the choices and this will open in a new tab.
 
  ![Contact Me screenshot](/assets/images/website-screenshots/screenshot-4.png)
 
