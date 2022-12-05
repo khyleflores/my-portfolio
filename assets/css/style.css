@@ -96,7 +96,7 @@ nav a:hover{
   height: 40rem;
   width: 100%;
   margin-bottom: 2.5rem;
-  background-image: url("../assets/images/portfolio-bg.jpg");
+  background-image: url('../images/portfolio-bg.jpg');
   background-size: cover;
   background-position: center;
 }
