@@ -4,6 +4,8 @@
   --light-pink: #F2D4D6;
   --navy-blue: #213F99;
   --grey: #3D3D3D;
+  --white_hover: #F5F5F5;
+  --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 * {
@@ -22,7 +24,7 @@ body{
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
   line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font);
 }
 
 h1,
@@ -57,7 +59,7 @@ a{
 header {
   width: 100%;
   padding: 5rem 5rem 2rem 5rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--font);
   background-color: var(--cavern-pink);
   font-weight: bold;
 }
@@ -83,6 +85,10 @@ nav li{
 nav a{
   margin-right: 3rem;
   color: var(--navy-blue);
+}
+
+nav a:hover{
+  color: var(--white_hover);
 }
 
 /*banner properties with background image*/
@@ -139,12 +145,12 @@ main {
   'my-work-title work-2 work-3'
   'my-work-title work-4 work-5';
   gap: 1rem;
+  margin-bottom: 5%;
 }
 
 /* Create contact me grid, add padding for space for bottom */
 .page-section-3{
   display: inline-grid;
-  grid-template-columns: 25% 37.5% 12.5% 12.5% 12.5%;
   grid-template-areas:
   'contact-me-title contact-me-email contact-me-twitter contact-me-linkedin contact-me-github';
   align-items: baseline;
@@ -244,7 +250,7 @@ main {
 footer{
   width: 100%;
   padding: 1rem 1rem 1rem 1rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--font);
   background-color: #ebecf0;
   font-weight: bold;
   text-align: center;
