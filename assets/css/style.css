@@ -1,12 +1,20 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+html {
+  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #F2D4D6;
+  /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+  font-size: 1.75rem;
   line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -15,9 +23,188 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin-bottom: 0.625rem;
+  color: #213F99;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
-p {
-  margin: 0;
+h1 {
+  /* 4rem = 40px (4 * 10px) */
+  font-size: 4rem;
 }
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+header {
+  padding: 5rem 5rem 2rem 5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #E1B0AC;
+  font-weight: bold;
+}
+
+header h1{
+  display: inline-block;
+}
+
+header nav{
+  float: right;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav a{
+  text-decoration: none;
+  margin-right: 3rem;
+  color: #213F99;
+}
+
+.hero-banner {
+  height: 40rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  background-image: url("/assets/images/portfolio-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-welcome .left-text{
+  padding: 12rem 0rem 0rem 52rem;
+}
+
+.banner-welcome .right-text{
+  padding: 0rem 0rem 0rem 62rem;
+}
+
+main {
+  width: 96%;
+  margin: 2rem auto;
+}
+
+
+.page-wrapper {
+  display: flex;
+  height: 1200px;
+  width: 1100px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.page-section-1{
+  display: inline-grid;
+  grid-template-columns: 25% 75%;
+  grid-template-areas:
+  'about-me-title about-me-details';
+}
+.page-section-2{
+  display: inline-grid;
+  grid-template-rows: 400px 400px 400px;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas:
+  'my-work-title work-1 work-1'
+  'my-work-title work-2 work-3'
+  'my-work-title work-4 work-5';
+}
+
+#about-me-title{
+  grid-area: about-me-title;
+}
+#about-me-details{
+  grid-area: about-me-details;
+}
+#my-work-title{
+  grid-area: my-work-title;
+}
+
+#work-1{
+  background-image: url("/assets/images/02-portfolio-1.jpg");
+  border: .5rem solid #E1B0AC;
+  grid-area: work-1;
+  background-size: cover;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+#work-2{
+  background-image: url("/assets/images/02-portfolio-2.jpg");
+  border: .5rem solid #E1B0AC;
+  grid-area: work-2;
+  background-size: cover;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+#work-3{
+  background-image: url("/assets/images/02-portfolio-3.jpg");
+  border: .5rem solid #E1B0AC;
+  grid-area: work-3;
+  background-size: cover;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+#work-4{
+  background-image: url("/assets/images/02-portfolio-4.jpg");
+  border: .5rem solid #E1B0AC;
+  grid-area: work-4;
+  background-size: cover;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+#work-5{
+  background-image: url("/assets/images/02-run-buddy.jpg");
+  border: .5rem solid #E1B0AC;
+  grid-area: work-5;
+  background-size: cover;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+#headline{
+  border: 1rem solid #E1B0AC;
+  background-color: rgba(255,255,255,0.8);
+  width: 30rem;
+  align-self: flex-end;
+
+}
+
+
+/*
+.portfolio-image img{
+   border-radius: 50%; 
+}
+
+.portfolio-image{
+  position: absolute;
+  left: 20%;
+  top: 2.5%;
+}*/
