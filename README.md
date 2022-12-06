@@ -15,7 +15,7 @@ N/A
 
 ## Usage 
 
-To use this website, click on this [link](khyleflores.github.io/my-portfolio "Khyle's Portfolio") or follow the link below:
+To use this website, click on this [link](https://khyleflores.github.io/my-portfolio "Khyle's Portfolio") or follow the link below:
 
 khyleflores.github.io/my-portfolio
 
